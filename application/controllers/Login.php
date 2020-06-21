@@ -28,24 +28,11 @@ class Login extends CI_Controller
         $password = $this->input->post('password');
         $username = $this->input->post('username');
 
-        $user = $this->db->get_where('customer', ['username' => $username])->row_array();
+        $user = $this->db->get_where('user', ['username' => $username])->row_array();
 
         if ($user) {
             if ($password == $user["password"]) {
-                $data =
-                    [
-                        'id' => $user['id_customer'],
-                        'nama_lengkap' => $user['nama_customer'],
-                        'nomor_rumah' => $user['nomor_rumah'],
-                        'alamat_rumah' => $user['alamat_rumah'],
-                        'no_telp' => $user['no_telp'],
-                        'username' => $user['username'],
-                        'role_id' => $user['role_id'],
-                        'user_id' => $user['id_customer']
-                    ];
-
-                $this->session->set_userdata($data);
-                redirect('Customer');
+                redirect('Layanan_pengaduan');
             } else {
                 $this->session->set_flashdata(
                     'message',

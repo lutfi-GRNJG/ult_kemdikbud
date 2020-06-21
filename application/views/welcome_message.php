@@ -57,7 +57,7 @@
 					<li><a href="#link">Link Terkait</a></li>
 
 
-					<li class="get-started"><a href="#">Login</a></li>
+					<li class="get-started"><a href="<?= site_url('Login') ?>">Login</a></li>
 				</ul>
 			</nav><!-- .nav-menu -->
 

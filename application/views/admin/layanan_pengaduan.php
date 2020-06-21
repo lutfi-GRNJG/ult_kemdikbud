@@ -29,9 +29,9 @@
                                         <?php
                                         if ($laporan->status_laporan == 'belum ditanggapi') : ?>
                                             <a href='<?= site_url("Layanan_pengaduan/ubah_status/$laporan->id_laporan") ?>' class="badge badge-success badge-pill">Ditanggapi</a>
-                                            <a href='#' class="badge badge-primary badge-pill">Lihat Detail</a>
+                                            <a href='<?= site_url("Layanan_pengaduan/detail_laporan/$laporan->id_laporan") ?>' class="badge badge-primary badge-pill">Lihat Detail</a>
                                         <?php else : ?>
-                                            <a href="#" class="badge badge-primary badge-pill">Lihat Detail</a>
+                                            <a href='<?= site_url("Layanan_pengaduan/detail_laporan/$laporan->id_laporan") ?>' class="badge badge-primary badge-pill">Lihat Detail</a>
                                         <?php endif; ?>
                                     </td>
                                     </td>
