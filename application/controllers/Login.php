@@ -16,11 +16,7 @@ class Login extends CI_Controller
         $this->form_validation->set_rules('password', 'password', 'trim|required');
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = "Login to Ult kemdikbud";
-            // $this->load->view('include_files/header', $data);
-            // $this->load->view('include_files/nav');
-            $this->load->view('include_files/login', $data);
-            // $this->load->view('include_files/footer');
+            $this->load->view('login/index');
         } else {
             $this->_login();
         }

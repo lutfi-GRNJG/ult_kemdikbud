@@ -77,7 +77,7 @@
 
                 <div class="card-body shadow mb-4">
 
-                    <form class="pengaduan" method="post" action="#">
+                    <form class="pengaduan" method="post" action="<?= site_url('pengaduan/tambah_pengaduan') ?>">
                         <div class="card-body">
                             <div class="d-sm-flex align-items-center justify-content-between mb-4">
                                 <h3 class=" mb-0 ">Data Pelapor</h3>
@@ -90,15 +90,9 @@
                                 <label for="nama" class="text-dark">Nama Pelapor</label>
                                 <input type="text" class="form-control" id="nama" name="nama" placeholder="your name">
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="telp">Nomor Telepon</label>
-                                    <input type="text" class="form-control" id="telp" placeholder="your phone number ">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="hp">Nomor WhatsApp</label>
-                                    <input type="text" class="form-control" id="hp" placeholder="your whatsapp number">
-                                </div>
+                            <div class="form-group">
+                                <label for="telp">Nomor Telepon</label>
+                                <input type="number" class="form-control" id="telp" name="telp" placeholder="your phone number ">
                             </div>
                             <div class="form-group">
                                 <label for="ktp" class="text-dark">Nomor KTP</label>
@@ -135,7 +129,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="laporan" class="text-dark">Judul Laporan</label>
+                                <label for="laporan" class="text-dark">Redaksi Laporan</label>
                                 <textarea name="laporan" class="form-control" placeholder="deskripsi laporan/kejadian"></textarea>
                             </div>
 
