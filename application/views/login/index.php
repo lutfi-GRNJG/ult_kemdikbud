@@ -60,7 +60,7 @@
     }
   </style>
 
-  <title>Login HRMS Amnotel</title>
+  <title>Login ULT Kemdikbud</title>
 </head>
 
 <body>
