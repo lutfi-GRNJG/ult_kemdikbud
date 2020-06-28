@@ -32,6 +32,14 @@ class Login extends CI_Controller
 
         if ($user) {
             if ($password == $user["password"]) {
+                $data =
+                    [
+                        'id_user' => $user['id_user'],
+                        'user_role' => $user['user_role'],
+                        'username' => $user['username']
+                    ];
+
+                $this->session->set_userdata($data);
                 redirect('Layanan_pengaduan');
             } else {
                 $this->session->set_flashdata(
@@ -52,8 +60,8 @@ class Login extends CI_Controller
     public function logout()
     {
         $this->session->unset_userdata('username');
-        $this->session->unset_userdata('role_id');
-        $this->session->unset_userdata('user_id');
+        $this->session->unset_userdata('id_user');
+        $this->session->unset_userdata('user_role');
 
         redirect('login');
     }
