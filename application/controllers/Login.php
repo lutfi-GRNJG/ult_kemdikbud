@@ -40,7 +40,7 @@ class Login extends CI_Controller
                     ];
 
                 $this->session->set_userdata($data);
-                redirect('Layanan_pengaduan');
+                redirect('Dashboard');
             } else {
                 $this->session->set_flashdata(
                     'message',
