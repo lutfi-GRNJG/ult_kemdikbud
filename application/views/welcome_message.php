@@ -45,12 +45,12 @@
 			<div class="logo mr-auto">
 				<!-- <h1 class="text-light"><a href="index.html"><span>Vesperr</span></a></h1> -->
 				<!-- Uncomment below if you prefer to use an image logo -->
-				<a href="index.html"><img src="assets/img/Kemdikbud.png" alt="" class="img-fluid"></a>
+				<a href="<?= site_url('Home') ?>"><img src="assets/img/Kemdikbud.png" alt="" class="img-fluid"></a>
 			</div>
 
 			<nav class="nav-menu d-none d-lg-block">
 				<ul>
-					<li class="active"><a href="#index.html">Home</a></li>
+					<li class="active"><a href="#hero">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#more-services">Layanan</a></li>
 					<li><a href="#prosedur">Prosedur</a></li>
@@ -92,19 +92,27 @@
 				<div class="row justify-content-md-center">
 
 					<div class="col-lg-2 col-md-4 col-6">
-						<img src="assets/img/facebook.png" class="img-fluid" alt="" data-aos="zoom-in">
+						<a href="https://www.fb.com/Kemdikbud.RI">
+							<img src="assets/img/facebook.png" class="img-fluid" alt="" data-aos="zoom-in">
+						</a>
 					</div>
 
 					<div class="col-lg-2 col-md-4 col-6">
-						<img src="assets/img/instagram.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+						<a href="https://www.instagram.com/kemdikbud.ri">
+							<img src="assets/img/instagram.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+						</a>
 					</div>
 
 					<div class="col-lg-2 col-md-4 col-6">
-						<img src="assets/img/youtube.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+						<a href="https://www.youtube.com/channel/UCH9AFSwY4WqgHoCLG2XIveg">
+							<img src="assets/img/youtube.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+						</a>
 					</div>
 
 					<div class="col-lg-2 col-md-4 col-6">
-						<img src="assets/img/twitter.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+						<a href="https://twitter.com/Kemdikbud_RI">
+							<img src="assets/img/twitter.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+						</a>
 					</div>
 
 
@@ -251,7 +259,7 @@
 							<div class="card-body">
 								<h5 class="card-title"><a href="">Permohonan Informasi</a></h5>
 								<p class="card-text">Layanan Permohonan Informasi terkait Pendidikan</p>
-								<div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Start</a></div>
+								<div class="read-more"><a href="<?= base_url('Permohonan_informasi') ?>"><i class="icofont-arrow-right"></i> Start</a></div>
 							</div>
 						</div>
 					</div>
@@ -270,7 +278,7 @@
 							<div class="card-body">
 								<h5 class="card-title"><a href="">Saran</a></h5>
 								<p class="card-text">Layanan Pemberian Saran terkait proses Pendidikan Indonesia</p>
-								<div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Start</a></div>
+								<div class="read-more"><a href="<?= base_url('Saran') ?>"><i class="icofont-arrow-right"></i> Start</a></div>
 							</div>
 						</div>
 					</div>
@@ -337,7 +345,7 @@
 				</div>
 				<div class="col-lg-6">
 					<nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-						<a href="#intro" class="scrollto">Home</a>
+						<a href="#hero" class="scrollto">Home</a>
 						<a href="#about" class="scrollto">About</a>
 						<a href="#more-services" class="scrollto">Layanan</a>
 						<a href="#prosedur" class="scrollto">Prosedur</a>
