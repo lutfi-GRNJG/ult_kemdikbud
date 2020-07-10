@@ -12,21 +12,21 @@ class Permohonan_informasi extends CI_Controller
     {
         $data =
             [
-                'alamat_email' => $this->input->post('email'),
-                'nama_pelapor' => $this->input->post('nama'),
-                'alamat_rumah' => $this->input->post('alamat'),
-                'nomor_telepon' => $this->input->post('telp'),
-                'nomor_ktp' => $this->input->post('ktp'),
-                'profesi' => $this->input->post('profesi'),
-                'provinsi' => $this->input->post('provinsi'),
-                'kabupaten' => $this->input->post('kabupaten'),
-                'kecamatan' => $this->input->post('kecamatan'),
-                'judul_laporan' => $this->input->post('judul'),
-                'rincian' => $this->input->post('rincian'),
-                'tujuan' => $this->input->post('tujuan'),
+                'email_pemohon' => $this->input->post('email'),
+                'nama_pemohon' => $this->input->post('nama'),
+                'no_HP_pemohon' => $this->input->post('telp'),
+                'no_KTP_pemohon' => $this->input->post('ktp'),
+                'alamat_pemohon' => $this->input->post('alamat'),
+                'kecamatan_pemohon' => $this->input->post('kecamatan'),
+                'kabupaten_pemohon' => $this->input->post('kabupaten'),
+                'provinsi_pemohon' => $this->input->post('provinsi'),
+                'profesi_pemohon' => $this->input->post('profesi'),
+                'judul_informasi' => $this->input->post('judul'),
+                'rincian_informasi' => $this->input->post('rincian'),
+                'tujuan_informasi' => $this->input->post('tujuan'),
             ];
 
-        $this->db->insert('', $data);
+        $this->db->insert('permohonan', $data);
         redirect('Home');
     }
 }

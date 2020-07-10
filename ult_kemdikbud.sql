@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 21, 2020 at 12:56 PM
+-- Generation Time: Jul 10, 2020 at 07:36 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -55,6 +55,56 @@ INSERT INTO `laporan` (`id_laporan`, `alamat_email`, `nama_pelapor`, `alamat_rum
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `permohonan`
+--
+
+CREATE TABLE `permohonan` (
+  `id_permohonan` int(11) NOT NULL,
+  `email_pemohon` varchar(100) NOT NULL,
+  `nama_pemohon` varchar(100) NOT NULL,
+  `no_HP_pemohon` varchar(15) NOT NULL,
+  `no_KTP_pemohon` varchar(100) NOT NULL,
+  `alamat_pemohon` varchar(100) NOT NULL,
+  `kecamatan_pemohon` varchar(100) NOT NULL,
+  `kabupaten_pemohon` varchar(100) NOT NULL,
+  `provinsi_pemohon` varchar(100) NOT NULL,
+  `profesi_pemohon` varchar(100) NOT NULL,
+  `judul_informasi` text NOT NULL,
+  `rincian_informasi` text NOT NULL,
+  `tujuan_informasi` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `permohonan`
+--
+
+INSERT INTO `permohonan` (`id_permohonan`, `email_pemohon`, `nama_pemohon`, `no_HP_pemohon`, `no_KTP_pemohon`, `alamat_pemohon`, `kecamatan_pemohon`, `kabupaten_pemohon`, `provinsi_pemohon`, `profesi_pemohon`, `judul_informasi`, `rincian_informasi`, `tujuan_informasi`) VALUES
+(1, 'lutfipurba122333@gmail.com', 'lutfi', '68768', '676868', 'ghj', 'jhgjh', 'bhj', 'bhjb', 'hbj', 'hghjvhjv', 'bjhbjhb', 'bhbjb');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `saran`
+--
+
+CREATE TABLE `saran` (
+  `id_saran` int(11) NOT NULL,
+  `email_pemohon` varchar(1100) NOT NULL,
+  `nama_pemohon` varchar(100) NOT NULL,
+  `no_HP_pemohon` varchar(15) NOT NULL,
+  `no_KTP_pemohon` varchar(100) NOT NULL,
+  `alamat_pemohon` varchar(100) NOT NULL,
+  `kecamatan_pemohon` varchar(100) NOT NULL,
+  `kabupaten_pemohon` varchar(100) NOT NULL,
+  `provinsi_pemohon` varchar(100) NOT NULL,
+  `profesi_pemohon` varchar(100) NOT NULL,
+  `judul_saran` text NOT NULL,
+  `redaksi_saran` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -83,6 +133,18 @@ ALTER TABLE `laporan`
   ADD PRIMARY KEY (`id_laporan`);
 
 --
+-- Indexes for table `permohonan`
+--
+ALTER TABLE `permohonan`
+  ADD PRIMARY KEY (`id_permohonan`);
+
+--
+-- Indexes for table `saran`
+--
+ALTER TABLE `saran`
+  ADD PRIMARY KEY (`id_saran`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -97,6 +159,12 @@ ALTER TABLE `user`
 --
 ALTER TABLE `laporan`
   MODIFY `id_laporan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `saran`
+--
+ALTER TABLE `saran`
+  MODIFY `id_saran` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user`

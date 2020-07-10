@@ -76,7 +76,7 @@
 
                 <div class="card-body shadow mb-4">
 
-                    <form class="pengaduan" method="post" action="#">
+                    <form class="pengaduan" method="post" action="<?= site_url("Saran/tambah_saran") ?>">
                         <div class="card-body">
                             <div class="d-sm-flex align-items-center justify-content-between mb-4">
                                 <h3 class=" mb-0 ">Data Diri</h3>
