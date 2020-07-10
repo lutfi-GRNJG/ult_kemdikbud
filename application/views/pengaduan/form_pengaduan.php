@@ -45,19 +45,18 @@
             <div class="logo mr-auto">
                 <!-- <h1 class="text-light"><a href="index.html"><span>Vesperr</span></a></h1> -->
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <a href="index.html"><img src="assets/img/Kemdikbud.png" alt="" class="img-fluid"></a>
+                <a href="<?= site_url('Home') ?>"><img src="assets/img/Kemdikbud.png" alt="" class="img-fluid"></a>
             </div>
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="#index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#more-services">Layanan</a></li>
-                    <li><a href="#prosedur">Prosedur</a></li>
-                    <li><a href="#link">Link Terkait</a></li>
+                    <li><a href="<?= site_url('Home') ?>">Home</a></li>
+                    <li><a href="<?= site_url('Home') ?>">About</a></li>
+                    <li><a href="<?= site_url('Home') ?>">Layanan</a></li>
+                    <li><a href="<?= site_url('Home') ?>">Prosedur</a></li>
 
 
-                    <li class="get-started"><a href="#">Login</a></li>
+                    <li class="get-started"><a href="<?= site_url('Login') ?>">Login</a></li>
                 </ul>
             </nav><!-- .nav-menu -->
 
@@ -136,7 +135,10 @@
 
 
                             <br>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <span class="float-right">
+                                <button type="button" class="btn btn-secondary">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </span>
                     </form>
                 </div>
 
@@ -146,27 +148,23 @@
 
     </section><!-- End Hero -->
     <!-- ======= Footer ======= -->
+    <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 text-lg-left text-center">
                     <div class="copyright">
-                        &copy; Copyright <strong>Vesperr</strong>. All Rights Reserved
+                        &copy; Copyright <strong>Kemdikbud</strong>. All Rights Reserved
                     </div>
                     <div class="credits">
-                        <!-- All the links in the footer should remain intact. -->
-                        <!-- You can delete the links only if you purchased the pro version. -->
-                        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
-                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-                        <a href="#intro" class="scrollto">Home</a>
-                        <a href="#about" class="scrollto">About</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Use</a>
+                        <a href="<?= site_url('Home') ?>" class="scrollto">Home</a>
+                        <a href="<?= site_url('Home') ?>" class="scrollto">About</a>
+                        <a href="<?= site_url('Home') ?>" class="scrollto">Layanan</a>
+                        <a href="<?= site_url('Home') ?>" class="scrollto">Prosedur</a>
                     </nav>
                 </div>
             </div>
