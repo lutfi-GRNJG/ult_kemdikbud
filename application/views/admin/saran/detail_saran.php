@@ -70,9 +70,11 @@
                         </div>
                         <br>
 
-                        <a href="<?= site_url('Layanan_pengaduan') ?>">
+                        <a href="<?= site_url('Saran') ?>">
                             <button type="button" class="btn btn-secondary">Cancel</button>
-
+                        </a>
+                        <a href="<?= site_url('Saran/send_email') ?>">
+                            <button type="button" class="btn btn-primary" value="<?= $laporan->alamat_email ?>">Respon</button>
                         </a>
                 </form>
             </div>

@@ -75,9 +75,12 @@
                         </div>
                         <br>
 
-                        <a href="<?= site_url('Layanan_pengaduan') ?>">
+                        <a href="<?= site_url('Permohonan_informasi') ?>">
                             <button type="button" class="btn btn-secondary">Cancel</button>
+                        </a>
 
+                        <a href="<?= site_url('Permohonan_informasi/send_email') ?>">
+                            <button type="button" class="btn btn-primary" value="<?= $laporan->alamat_email ?>">Respon</button>
                         </a>
                 </form>
             </div>
