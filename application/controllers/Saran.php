@@ -11,7 +11,7 @@ class Saran extends CI_Controller
         $this->load->model('Saran_model');
     }
 
-    public function tampil()
+    public function tampil_data()
     {
         $tampil = array(
             'data_Saran' => $this->Saran_model->tampil_saran()
@@ -49,6 +49,28 @@ class Saran extends CI_Controller
         $this->db->insert('saran', $data);
         redirect('Home');
     }
+
+    public function detail_saran()
+    {
+        $id = $this->uri->segment('3');
+
+        $tampil = array(
+            'detail_saran' => $this->Saran_model->detail_saran($id),
+        );
+        $this->load->view('templates/header'); // header
+        $this->load->view('templates/nav'); // navigasi
+        $this->load->view('admin/saran/detail_saran', $tampil); // konten
+        $this->load->view('templates/footer'); // footer js
+    }
+    public function ubah_status()
+    {
+        $id_saran = $this->uri->segment('3');
+        $this->db->set('status_saran', 'ditanggapi');
+        $this->db->where('id_saran', $id_saran);
+        $this->db->update('saran');
+        redirect('Saran/tampil_data');
+    }
+
 
     public function send_email()
     {

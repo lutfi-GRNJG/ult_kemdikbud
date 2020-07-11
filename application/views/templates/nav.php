@@ -22,9 +22,9 @@
 
                             <div class="sb-sidenav-menu-heading">Layanan Masyarakat</div>
                             <div class="dropdown-divider"></div>
-                            <a class="nav-link" href="<?= site_url("Permohonan_informasi") ?>">Permohonan Informasi</a>
+                            <a class="nav-link" href="<?= site_url("Permohonan_informasi/tampil_data") ?>">Permohonan Informasi</a>
                             <a class="nav-link" href="<?= site_url("Layanan_pengaduan") ?>">Pengaduan</a>
-                            <a class="nav-link" href="<?= site_url("Saran") ?>">Saran</a>
+                            <a class="nav-link" href="<?= site_url("Saran/tampil_data") ?>">Saran</a>
                         </div>
                     </div>
 

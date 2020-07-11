@@ -11,4 +11,14 @@ class Saran_model extends CI_Model
         $query = $this->db->get();
         return $query->result();
     }
+
+    public function detail_saran($id)
+    {
+        $this->db->select('*')
+            ->FROM('saran')
+            ->WHERE('id_saran', $id);
+
+        $query = $this->db->get();
+        return $query->result();
+    }
 }

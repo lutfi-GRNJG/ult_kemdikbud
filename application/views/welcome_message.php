@@ -259,7 +259,7 @@
 							<div class="card-body">
 								<h5 class="card-title"><a href="">Permohonan Informasi</a></h5>
 								<p class="card-text">Layanan Permohonan Informasi terkait Pendidikan</p>
-								<div class="read-more"><a href="<?= base_url('Permohonan_informasi/form') ?>"><i class="icofont-arrow-right"></i> Start</a></div>
+								<div class="read-more"><a href="<?= base_url('Permohonan_informasi') ?>"><i class="icofont-arrow-right"></i> Start</a></div>
 							</div>
 						</div>
 					</div>

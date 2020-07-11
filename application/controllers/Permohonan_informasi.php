@@ -10,12 +10,12 @@ class Permohonan_informasi extends CI_Controller
         $this->load->library('form_validation');
         $this->load->model('Permohonan_informasi_model');
     }
-    public function form()
+    public function index()
     {
         $this->load->view('permohonan informasi/form_informasi.php');
     }
 
-    public function index()
+    public function tampil_data()
     {
         $tampil = array(
             'data_permohonan_informasi' => $this->Permohonan_informasi_model->tampil_permohonan()
@@ -47,6 +47,28 @@ class Permohonan_informasi extends CI_Controller
 
         $this->db->insert('permohonan', $data);
         redirect('Home');
+    }
+
+    public function detail_informasi()
+    {
+        $id = $this->uri->segment('3');
+
+        $tampil = array(
+            'detail_informasi' => $this->Permohonan_informasi_model->detail_informasi($id)
+        );
+        $this->load->view('templates/header'); // header
+        $this->load->view('templates/nav'); // navigasi
+        $this->load->view('admin/permohonan informasi/detail_informasi', $tampil); // konten
+        $this->load->view('templates/footer'); // footer js
+    }
+
+    public function ubah_status()
+    {
+        $id_informasi = $this->uri->segment('3');
+        $this->db->set('status_informasi', 'ditanggapi');
+        $this->db->where('id_permohonan', $id_informasi);
+        $this->db->update('permohonan');
+        redirect('Permohonan_informasi/tampil_data');
     }
 
     public function send_email()
