@@ -3,9 +3,24 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Saran extends CI_Controller
 {
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->library('form_validation');
+        $this->load->model('Saran_model');
+    }
+
     public function index()
     {
-        $this->load->view('saran/form_saran.php');
+        $tampil = array(
+            'data_Saran' => $this->Layanan_pengaduan_model->tampil_laporan()
+        );
+        $this->load->view('templates/header'); // header
+        $this->load->view('templates/nav'); // navigasi
+        $this->load->view('admin/layanan_pengaduan', $tampil); // konten
+        $this->load->view('templates/footer'); // footer js
+
     }
 
     public function tambah_saran()
