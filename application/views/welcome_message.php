@@ -300,7 +300,7 @@
 					<div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
 						<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon"><i class="bx bxl-dribbble"></i></div>
-							<h4 class="title"><a href="">Permohonan Informasi</a></h4>
+							<h4 class="title"><a href="<?= site_url('Prosedur_informasi') ?>">Permohonan Informasi</a></h4>
 							<p class="description">Prosedur permohonan informasi baik secara offline maupun online</p>
 						</div>
 					</div>
@@ -308,21 +308,21 @@
 					<div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
 						<div class="icon-box" data-aos="fade-up" data-aos-delay="200">
 							<div class="icon"><i class="bx bx-file"></i></div>
-							<h4 class="title"><a href="">Pengaduan</a></h4>
+							<h4 class="title"><a href="<?= site_url('Prosedur_pengaduan') ?>">Pengaduan</a></h4>
 							<p class="description">Prosedur laporan pengaduan baik secara offline maupun online</p>
 						</div>
 					</div>
 
-					<div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+					<!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
 						<div class="icon-box" data-aos="fade-up" data-aos-delay="300">
 							<div class="icon"><i class="bx bx-tachometer"></i></div>
 							<h4 class="title"><a href="">Saran</a></h4>
 							<p class="description">Prosedur pemberian saran baik secara offline maupun online</p>
 						</div>
 					</div>
+ -->
 
-
-
+					<!--  -->
 				</div>
 
 			</div>

@@ -91,7 +91,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="telp">Nomor Telepon</label>
-                                <input type="number" class="form-control" id="telp" name="telp" placeholder="your phone number ">
+                                <input type="text" class="form-control" id="telp" name="telp" placeholder="your phone number ">
                             </div>
                             <div class="form-group">
                                 <label for="ktp" class="text-dark">Nomor KTP</label>

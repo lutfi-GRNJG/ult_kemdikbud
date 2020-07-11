@@ -24,7 +24,7 @@
                         </div>
                         <div class="form-group">
                             <label for="telp">Nomor Telepon</label>
-                            <input type="number" class="form-control" value="<?= $saran->no_HP_pemohon ?>" id="telp" name="telp" placeholder="your phone number " readonly>
+                            <input type="text" class="form-control" value="<?= $saran->no_HP_pemohon ?>" id="telp" name="telp" placeholder="your phone number " readonly>
                         </div>
                         <div class="form-group">
                             <label for="ktp" class="text-dark">Nomor KTP</label>
@@ -62,7 +62,7 @@
 
                         <div class="form-group">
                             <label for="saran" class="text-dark">Redaksi Saran</label>
-                            <textarea name="saran" class="form-control" placeholder="deskripsi saran"><?= $saran->redaksi_saran ?></textarea readonly>
+                            <textarea name="saran" class="form-control" placeholder="deskripsi saran" readonly><?= $saran->redaksi_saran ?></textarea>
                         </div>
                         <div class="form-group">
                             <label for="judul" class="text-dark">Status saran</label>

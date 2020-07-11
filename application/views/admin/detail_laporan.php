@@ -24,7 +24,7 @@
                         </div>
                         <div class="form-group">
                             <label for="telp">Nomor Telepon</label>
-                            <input type="number" class="form-control" value="<?= $laporan->nomor_telepon ?>" id="telp" name="telp" placeholder="your phone number " readonly>
+                            <input type="text" class="form-control" value="<?= $laporan->nomor_telepon ?>" id="telp" name="telp" placeholder="your phone number " readonly>
                         </div>
                         <div class="form-group">
                             <label for="ktp" class="text-dark">Nomor KTP</label>
@@ -74,9 +74,6 @@
                             <button type="button" class="btn btn-secondary">Cancel</button>
                         </a>
 
-                        <a href="<?= site_url('Layanan_pengaduan/send_email') ?>">
-                            <button type="button" class="btn btn-primary" value="<?= $laporan->alamat_email ?>">Respon</button>
-                        </a>
 
                 </form>
             </div>

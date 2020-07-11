@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Layanan Pengaduan</title>
+    <title>Prosedur Pengaduan</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
 
@@ -69,77 +69,44 @@
 
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>Form Pengaduan</h2>
+                <h2>Prosedur Pengaduan</h2>
             </div>
 
             <div class="row content">
 
                 <div class="card-body shadow mb-4">
-
-                    <form class="pengaduan" method="post" action="<?= site_url('pengaduan/tambah_pengaduan') ?>">
-                        <div class="card-body">
-                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <h3 class=" mb-0 ">Data Pelapor</h3>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="text-dark">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="your email address">
-                            </div>
-                            <div class="form-group">
-                                <label for="nama" class="text-dark">Nama Pelapor</label>
-                                <input type="text" class="form-control" id="nama" name="nama" placeholder="your name">
-                            </div>
-                            <div class="form-group">
-                                <label for="telp">Nomor Telepon</label>
-                                <input type="text" class="form-control" id="telp" name="telp" placeholder="your phone number ">
-                            </div>
-                            <div class="form-group">
-                                <label for="ktp" class="text-dark">Nomor KTP</label>
-                                <input type="text" class="form-control" id="ktp" name="ktp" placeholder="your ktp number">
-                            </div>
-                            <div class="form-group">
-                                <label for="alamat" class="text-dark">Alamat</label>
-                                <input type="text" class="form-control" id="alamat" name="alamat" placeholder="your address">
-                            </div>
-                            <div class="form-group">
-                                <label for="kecamatan" class="text-dark">Kecamatan</label>
-                                <input type="text" class="form-control" id="kecamatan" name="kecamatan" placeholder="your kecamatan">
-                            </div>
-                            <div class="form-group">
-                                <label for="kabupaten" class="text-dark">Kabupaten</label>
-                                <input type="text" class="form-control" id="kabupaten" name="kabupaten" placeholder="your kabupaten">
-                            </div>
-                            <div class="form-group">
-                                <label for="provinsi" class="text-dark">Provinsi</label>
-                                <input type="text" class="form-control" id="provinsi" name="provinsi" placeholder="your province">
-                            </div>
-                            <div class="form-group">
-                                <label for="profesi" class="text-dark">Profesi Pelapor</label>
-                                <input type="text" class="form-control" id="profesi" name="profesi" placeholder="your profesi">
-                            </div>
-                            <br>
-                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <h3 class=" mb-0 ">Keterangan Laporan</h3>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="judul" class="text-dark">Judul Laporan</label>
-                                <input type="text" class="form-control" id="judul" name="judul" placeholder="judul laporan pengaduan">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="laporan" class="text-dark">Redaksi Laporan</label>
-                                <textarea name="laporan" class="form-control" placeholder="deskripsi laporan/kejadian"></textarea>
-                            </div>
-
-
-
-                            <br>
-                            <span class="float-right">
-                                <button type="button" class="btn btn-secondary">Cancel</button>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </span>
-                    </form>
+                    <ol>
+                        <li>Layanan informasi di Kementerian Pendidikan dan Kebudayaan (Kemdikbud) dikelola secara terpusat satu pintu oleh Pejabat Pengelola Informasi dan Dokumentasi (PPID) yaitu Kepala Pusat Informasi dan Hubungan Masyarakat (sekarang Biro Komunikasi dan Layanan Masyarakat).</li>
+                        <li>Unit layanan informasi publik diselenggarakan di Unit Layanan Terpadu (ULT). Gedung C Lt.1, Jl. Jenderal Sudirman, Senayan, Jakarta Pusat, di bawah Biro Komunikasi dan Layanan Masyarakat</li>
+                        <li>Untuk pelapor pengaduan yang datang ke ULT harus mendaftarkan diri kepada petugas yang memberikan nomor antrian.</li>
+                        <li>Petugas ULT memberikan nomor antrian dan formulir data pengunjung untuk di isi dan mengarahkan untuk menuju tempat duduk tunggu yang sudah ditentukan sesuai dengan loket layanan yang diminta.</li>
+                        <li>Petugas loket memanggil nomor urut antrian pengunjung sesuai dengan layanan yang diminta sebanyak tiga kali dan jika tidak datang akan dilanjutkan pemanggilan ke nomor berikutnya dan akan dipanggil kembali setelah yang bersangkutan melapor ke petugas loket dengan meloncat tiga nomor antrian. Apabila terjadi alat komunikasi elektronik tidak berfungsi maka petugas ULT memanggil pemohon secara manual.</li>
+                        <li>Pengunjung menuju loket layanan dan menyerahkan nomor antrian dan formulir data pengunjung yang sudah di isi lengkap.</li>
+                        <li>Pelapor harus menyampaikan laporan secara tertulis yang menyertakan:
+                            <dl>
+                                <dd>a. Formulir Pengaduan yang telah diisi lengkap.</dd>
+                                <dd>b. Identitas diri pelapor yang sah dan masih berlaku (KTP/SIM).</dd>
+                                <dd>c. Tempat dan waktu kejadian pelanggaran.</dd>
+                                <dd>d. Bentuk pelanggaran yang terjadi.</dd>
+                                <dd>e. Identitas pelaku pelanggaran</dd>
+                                <dd>f. Bukti fisik pelanggaran</dd>
+                            </dl>
+                        </li>
+                        <li>Laporan atau pengaduan tersebut ditelaah dan diklasifikasikan oleh petugas melalui tahapan sebagai berikut:
+                            <dl>
+                                <dd>a. Identifikasi masalah.</dd>
+                                <dd>b. Pemeriksaan substansi pengaduan.</dd>
+                                <dd>c. Klarifikasi.</dd>
+                                <dd>d. Evaluasi bukti.</dd>
+                                <dd>e. Seleksi.</dd>
+                            </dl>
+                        </li>
+                        <li>Laporan atau pengaduan yang telah memenuhi persyaratan, akan ditindaklanjuti ke unit kerja terkait sesuai dengan jenis laporan dan pengaduannya.</li>
+                        <li>Unit kerja akan memproses dan melakukan investigasi lebih lanjut atas laporan dan pengaduan tersebut.</li>
+                        <li>Berdasarkan Peraturan Presiden Nomor 76 Tahun 2013 tentang Pengelolaan Pengaduan Pelayanan Publik, jangka waktu penyelesaian pengaduan paling lambat 60 hari sejak berkas pengaduan dinyatakan lengkap.</li>
+                        <li>Identitas pelapor atau pengadu dijamin kerahasiaannya sesuai ketentuan perundang-undangan.</li>
+                        <li>Pelapor atau pengadu tidak di pungut biaya, namun jika ada dokumen yang harus di foto copy dan penggandaan CD dibebankan kepada pelapor atau pengadu.</li>
+                    </ol>
                 </div>
 
             </div>
