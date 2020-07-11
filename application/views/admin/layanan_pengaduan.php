@@ -11,10 +11,10 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>Id_laporan</th>
-                                <th>Nama_pelapor</th>
-                                <th>Judul_laporan</th>
-                                <th>Status_laporan</th>
+                                <th>ID</th>
+                                <th>Nama Pelapor</th>
+                                <th>Judul Laporan</th>
+                                <th>Status Laporan</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -28,8 +28,9 @@
                                     <td>
                                         <?php
                                         if ($laporan->status_laporan == 'belum ditanggapi') : ?>
-                                            <a href='<?= site_url("Layanan_pengaduan/ubah_status/$laporan->id_laporan") ?>' class="badge badge-success badge-pill">Ditanggapi</a>
                                             <a href='<?= site_url("Layanan_pengaduan/detail_laporan/$laporan->id_laporan") ?>' class="badge badge-primary badge-pill">Lihat Detail</a>
+                                            <a href='<?= site_url("Layanan_pengaduan/ubah_status/$laporan->id_laporan") ?>' class="badge badge-success badge-pill">Ditanggapi</a>
+
                                         <?php else : ?>
                                             <a href='<?= site_url("Layanan_pengaduan/detail_laporan/$laporan->id_laporan") ?>' class="badge badge-primary badge-pill">Lihat Detail</a>
                                         <?php endif; ?>
