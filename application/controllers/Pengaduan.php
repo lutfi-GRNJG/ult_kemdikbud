@@ -28,6 +28,7 @@ class Pengaduan extends CI_Controller
                 'kecamatan' => $this->input->post('kecamatan'),
                 'judul_laporan' => $this->input->post('judul'),
                 'redaksi_laporan' => $this->input->post('laporan'),
+                'status_laporan' => "belum ditanggapi"
             ];
 
         $this->db->insert('laporan', $data);
