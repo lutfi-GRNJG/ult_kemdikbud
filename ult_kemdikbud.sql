@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 10, 2020 at 07:36 PM
+-- Generation Time: Jul 11, 2020 at 02:22 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -71,15 +71,16 @@ CREATE TABLE `permohonan` (
   `profesi_pemohon` varchar(100) NOT NULL,
   `judul_informasi` text NOT NULL,
   `rincian_informasi` text NOT NULL,
-  `tujuan_informasi` text NOT NULL
+  `tujuan_informasi` text NOT NULL,
+  `status_informasi` enum('ditanggapi','belum ditanggapi') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `permohonan`
 --
 
-INSERT INTO `permohonan` (`id_permohonan`, `email_pemohon`, `nama_pemohon`, `no_HP_pemohon`, `no_KTP_pemohon`, `alamat_pemohon`, `kecamatan_pemohon`, `kabupaten_pemohon`, `provinsi_pemohon`, `profesi_pemohon`, `judul_informasi`, `rincian_informasi`, `tujuan_informasi`) VALUES
-(1, 'lutfipurba122333@gmail.com', 'lutfi', '68768', '676868', 'ghj', 'jhgjh', 'bhj', 'bhjb', 'hbj', 'hghjvhjv', 'bjhbjhb', 'bhbjb');
+INSERT INTO `permohonan` (`id_permohonan`, `email_pemohon`, `nama_pemohon`, `no_HP_pemohon`, `no_KTP_pemohon`, `alamat_pemohon`, `kecamatan_pemohon`, `kabupaten_pemohon`, `provinsi_pemohon`, `profesi_pemohon`, `judul_informasi`, `rincian_informasi`, `tujuan_informasi`, `status_informasi`) VALUES
+(1, 'lutfipurba122333@gmail.com', 'lutfi', '68768', '676868', 'ghj', 'jhgjh', 'bhj', 'bhjb', 'hbj', 'hghjvhjv', 'bjhbjhb', 'bhbjb', 'ditanggapi');
 
 -- --------------------------------------------------------
 
@@ -99,8 +100,16 @@ CREATE TABLE `saran` (
   `provinsi_pemohon` varchar(100) NOT NULL,
   `profesi_pemohon` varchar(100) NOT NULL,
   `judul_saran` text NOT NULL,
-  `redaksi_saran` text NOT NULL
+  `redaksi_saran` text NOT NULL,
+  `status_saran` enum('ditanggapi','belum ditanggapi') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `saran`
+--
+
+INSERT INTO `saran` (`id_saran`, `email_pemohon`, `nama_pemohon`, `no_HP_pemohon`, `no_KTP_pemohon`, `alamat_pemohon`, `kecamatan_pemohon`, `kabupaten_pemohon`, `provinsi_pemohon`, `profesi_pemohon`, `judul_saran`, `redaksi_saran`, `status_saran`) VALUES
+(1, 'lutfi1700018113@webmail.uad.ac.id', 'Lutfi', '088882999272', '888722677', 'jogjakarta', 'umbulharjo', 'jogjakarta', 'DIY', 'mahasiswa', 'lebih diperbaiki lagi', 'ya pokoknya gitu', 'ditanggapi');
 
 -- --------------------------------------------------------
 
@@ -164,7 +173,7 @@ ALTER TABLE `laporan`
 -- AUTO_INCREMENT for table `saran`
 --
 ALTER TABLE `saran`
-  MODIFY `id_saran` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_saran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `user`
