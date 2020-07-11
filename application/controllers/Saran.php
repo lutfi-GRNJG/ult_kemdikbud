@@ -11,7 +11,7 @@ class Saran extends CI_Controller
         $this->load->model('Saran_model');
     }
 
-    public function index()
+    public function tampil()
     {
         $tampil = array(
             'data_Saran' => $this->Saran_model->tampil_saran()
@@ -23,7 +23,7 @@ class Saran extends CI_Controller
 
     }
 
-    public function form()
+    public function index()
     {
         $this->load->view('saran/form_saran.php');
     }

@@ -278,7 +278,7 @@
 							<div class="card-body">
 								<h5 class="card-title"><a href="">Saran</a></h5>
 								<p class="card-text">Layanan Pemberian Saran terkait proses Pendidikan Indonesia</p>
-								<div class="read-more"><a href="<?= base_url('Saran/form') ?>"><i class="icofont-arrow-right"></i> Start</a></div>
+								<div class="read-more"><a href="<?= base_url('Saran') ?>"><i class="icofont-arrow-right"></i> Start</a></div>
 							</div>
 						</div>
 					</div>
