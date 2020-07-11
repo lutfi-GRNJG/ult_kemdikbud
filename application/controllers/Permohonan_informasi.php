@@ -10,6 +10,10 @@ class Permohonan_informasi extends CI_Controller
         $this->load->library('form_validation');
         $this->load->model('Permohonan_informasi_model');
     }
+    public function form()
+    {
+        $this->load->view('permohonan informasi/form_informasi.php');
+    }
 
     public function index()
     {
@@ -38,6 +42,7 @@ class Permohonan_informasi extends CI_Controller
                 'judul_informasi' => $this->input->post('judul'),
                 'rincian_informasi' => $this->input->post('rincian'),
                 'tujuan_informasi' => $this->input->post('tujuan'),
+                'status_informasi' => "belum ditanggapi"
             ];
 
         $this->db->insert('permohonan', $data);

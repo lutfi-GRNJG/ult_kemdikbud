@@ -19,7 +19,25 @@
                             </tr>
                         </thead>
                         <tbody>
-
+                            <?php foreach ($data_Saran as $saran) : ?>
+                                <tr>
+                                    <td><?= $saran->id_saran ?></td>
+                                    <td><?= $saran->nama_pemohon ?></td>
+                                    <td><?= $saran->judul_saran ?></td>
+                                    <td><?= $saran->status_saran ?></td>
+                                    <td>
+                                        <?php
+                                        if ($saran->status_saran == 'belum ditanggapi') : ?>
+                                            <a href='<?= site_url("Saran/ubah_status/$saran->id_saran") ?>' class="badge badge-success badge-pill">Ditanggapi</a>
+                                            <a href='<?= site_url("Saran/detail_saran/$saran->id_saran") ?>' class="badge badge-primary badge-pill">Lihat Detail</a>
+                                        <?php else : ?>
+                                            <a href='<?= site_url("Saran/detail_saran/$saran->id_saran") ?>' class="badge badge-primary badge-pill">Lihat Detail</a>
+                                        <?php endif; ?>
+                                    </td>
+                                    </td>
+                                </tr>
+                            <?php
+                            endforeach ?>
                         </tbody>
                     </table>
                 </div>

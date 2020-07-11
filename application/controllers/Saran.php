@@ -14,13 +14,18 @@ class Saran extends CI_Controller
     public function index()
     {
         $tampil = array(
-            'data_Saran' => $this->Layanan_pengaduan_model->tampil_laporan()
+            'data_Saran' => $this->Saran_model->tampil_saran()
         );
         $this->load->view('templates/header'); // header
         $this->load->view('templates/nav'); // navigasi
-        $this->load->view('admin/layanan_pengaduan', $tampil); // konten
+        $this->load->view('admin/saran/tampil_saran', $tampil); // konten
         $this->load->view('templates/footer'); // footer js
 
+    }
+
+    public function form()
+    {
+        $this->load->view('saran/form_saran.php');
     }
 
     public function tambah_saran()
@@ -38,6 +43,7 @@ class Saran extends CI_Controller
                 'profesi_pemohon' => $this->input->post('profesi'),
                 'judul_saran' => $this->input->post('judul'),
                 'redaksi_saran' => $this->input->post('saran'),
+                'status_saran' => "belum ditanggapi"
             ];
 
         $this->db->insert('saran', $data);

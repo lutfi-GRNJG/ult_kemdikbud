@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Layanan Saran</title>
+    <title>Layanan Pengaduan</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
 
@@ -69,17 +69,17 @@
 
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>Form Pengajuan Saran</h2>
+                <h2>Form Pengaduan</h2>
             </div>
 
             <div class="row content">
 
                 <div class="card-body shadow mb-4">
 
-                    <form class="pengaduan" method="post" action="<?= site_url("Saran/tambah_saran") ?>">
+                    <form class="pengaduan" method="post" action="<?= site_url('pengaduan/tambah_pengaduan') ?>">
                         <div class="card-body">
                             <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <h3 class=" mb-0 ">Data Diri</h3>
+                                <h3 class=" mb-0 ">Data Pelapor</h3>
                             </div>
                             <div class="form-group">
                                 <label for="email" class="text-dark">Email</label>
@@ -119,17 +119,17 @@
                             </div>
                             <br>
                             <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <h3 class=" mb-0 ">Keterangan Saran</h3>
+                                <h3 class=" mb-0 ">Keterangan Laporan</h3>
                             </div>
 
                             <div class="form-group">
-                                <label for="judul" class="text-dark">Judul Saran</label>
-                                <input type="text" class="form-control" id="judul" name="judul" placeholder="judul saran">
+                                <label for="judul" class="text-dark">Judul Laporan</label>
+                                <input type="text" class="form-control" id="judul" name="judul" placeholder="judul laporan pengaduan">
                             </div>
 
                             <div class="form-group">
-                                <label for="laporan" class="text-dark">Redaksi Saran</label>
-                                <textarea name="saran" class="form-control" placeholder="deskripsi saran"></textarea>
+                                <label for="laporan" class="text-dark">Redaksi Laporan</label>
+                                <textarea name="laporan" class="form-control" placeholder="deskripsi laporan/kejadian"></textarea>
                             </div>
 
 
