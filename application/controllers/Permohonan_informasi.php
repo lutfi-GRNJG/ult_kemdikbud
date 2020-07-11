@@ -3,9 +3,23 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Permohonan_informasi extends CI_Controller
 {
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->library('form_validation');
+        $this->load->model('Permohonan_informasi_model');
+    }
+
     public function index()
     {
-        $this->load->view('permohonan informasi/form_informasi.php');
+        $tampil = array(
+            'data_permohonan_informasi' => $this->Permohonan_informasi_model->tampil_permohonan()
+        );
+        $this->load->view('templates/header'); // header
+        $this->load->view('templates/nav'); // navigasi
+        $this->load->view('admin/permohonan informasi/tampil_informasi', $tampil); // konten
+        $this->load->view('templates/footer'); // footer js
     }
 
     public function tambah_permohonan_informasi()
