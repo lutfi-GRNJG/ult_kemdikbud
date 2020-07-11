@@ -11,10 +11,10 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>Id Permohonan</th>
+                                <th>ID</th>
                                 <th>Nama Pemohon</th>
                                 <th>Judul Informasi</th>
-                                <th>Status_laporan</th>
+                                <th>Status Informasi</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
